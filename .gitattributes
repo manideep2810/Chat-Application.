@@ -1,0 +1,2 @@
+*.ejs linguist-vendored
+*.ejs linguist-generated
