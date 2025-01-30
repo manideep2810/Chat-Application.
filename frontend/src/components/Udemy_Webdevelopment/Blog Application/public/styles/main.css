@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #5904a4, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 93vh;
+}
+  
+@keyframes gradient-animation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+  
+
+.gradient-background-1 {
+    /* background-color: red;; */
+    background: linear-gradient(300deg, #00bfff, #e56478, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+  
+@keyframes gradient-animation-1 {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+  
+
+nav{
+    padding: 1rem;
+    color: white;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerr{
+    height: 93vh;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr-1{
+    height: 93vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    width: 50vw;
+}
+
+.index-heading{
+    font-family: "Playwrite Tanzania Guides";
+    font-size: 6rem;
+}
+
+label{
+    color: black;
+}
+
+.form-body{
+    width: 100%;
+}
+
+.myBlogs-href{
+    font-size: larger;
+    color: black;
+}
+
+.containeer{
+    color: #5904a4;
+}

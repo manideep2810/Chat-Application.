@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">NewsApp</a>
+        <form method="post" action="/Country">
+            <input type="text" class="Searchh" placeholder="Search by Country" name="Country">
+            <input type="submit" class="Searchh" value="Search">
+        </form>
+    </div>
+</nav>
+<header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Categories</span>
+      </a>
+      <div class="categories">
+        <a class="btn btn-secondary" href="/business">business</a>
+        <a class="btn btn-secondary" href="/entertainment">entertainment</a>
+        <a class="btn btn-secondary" href="/general">general</a>
+        <a class="btn btn-secondary" href="/health">health</a>
+        <a class="btn btn-secondary" href="/science">science</a>
+        <a class="btn btn-secondary" href="/technology">technology</a>
+        <a class="btn btn-secondary" href="/sports">sports</a>
+      </div>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <% if(locals.news && locals.news.length!==0 && locals.news[0].name){ %>
+            <% for(var i = 0 ; i < news.length ; i++){ %>
+                <% if(news[i].name === "[Removed]"){ %>
+                    <% continue %>
+                <% } %>
+                <div class="row featurette flexit mt-5">
+                    <div class="col-md-7">
+                      <h2 class="featurette-heading fw-normal lh-1"> <%=news[i].name%> </h2>
+                      <p class="lead"><%= news[i].description %></p>
+                    </div>
+                    <div class="col-md-5">
+                        
+                    </div>
+                </div>
+                <div class="info">
+                    <a  class="info-item" href="<%=news[i].url%>">source</a>
+                    <a class="info-item" href="<%=news[i].url%>">view-complete-article</a>
+                </div>
+                <hr>
+            <% } %>
+        <% } %>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.color-1{
+    background-color: rgb(6, 1, 22);
+}
+
+.color-2{
+    color: #7562E0;
+}
+
+.color-2-1{
+    background-color: #7562E0;
+}
+
+.color-3{
+    background-color: #020822f6;
+    color: white;
+}
+
+.color-4{
+    background-color:  rgba(128, 128, 128, 0.203);
+}
+
+.textt{
+    color: white;
+    font-family: serif;
+}
+
+.textt-1{
+    color: white;
+    font-family: serif;
+    font-size: large;
+}
+
+.bold-1{
+    font-weight: 500;
+    font-family: serif;
+    font-size: large;
+}
+
+.About{
+    display: inline;
+    width: 2.5rem;
+}
+
+#Home{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    /* border: 2px solid white; */
+}
+
+.specialist{
+    color: rgb(38, 218, 218);
+    font-size: x-large;
+    font-weight: 800;
+}
+
+#Leetcode{
+    color: #E2E2B6;
+}
+
+#codechef{
+    color: #A72693;
+}
+
+li{
+    margin-left: 0px;
+    font-family: serif;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+#projects img{
+    margin: 1rem;
+}
+
+
+
+
+
+
+

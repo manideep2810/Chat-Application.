@@ -1,0 +1,124 @@
+.green-bg {
+    background-color: rgb(60, 40, 236);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+.center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center h1 {
+    color: rgba(255, 0, 0, 0.1);
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-size: cover;
+    background-image: url(https://th.bing.com/th/id/OIP.jySiB1-1fp01E7GPkcvFQQHaEK?rs=1&pid=ImgDetMain);
+    -webkit-background-clip: text;
+    animation: background-text-animation 30s linear infinite;
+}
+
+@keyframes background-text-animation {
+    0% {
+        background-position: left 0px top 50%;
+    }
+
+    50% {
+        background-position: left 1500px top 50%;
+    }
+
+    100% {
+        background-position: left 0px top 50%;
+    }
+}
+
+.green-bg li{
+    font-size: large;
+}
+
+.text-white{
+    color: white;
+}
+
+.bg-grey{
+    background-color: rgba(39, 34, 34, 0.677);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.x{
+    background-color: rgb(60, 40, 236);
+    color: white;
+}
+
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+.containerr{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* width: 250%; */
+    /* border: 2px solid white; */
+}
+
+.buttn{
+    width: 41rem;
+}
+
+.head{
+    font-family: cursive;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.boxx{
+    display: flex;
+    /* position: absolute; */
+}
+
+.head_nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.Sidebar{
+    position: sticky;
+    top: 0rem;
+    bottom: 0rem;
+}
+
+.colr1{
+    background-color: rosybrown;
+}

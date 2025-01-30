@@ -1,0 +1,40 @@
+.flexit{
+    display: flex;
+    align-items: center;
+}
+
+.info-item{
+    text-decoration: none;
+    color: grey;
+    font-size: small;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+}
+
+img{
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.categories{
+    display: flex;
+    gap: 5px;
+}
+
+.xx{
+    justify-content: space-between;
+}
+
+.Searchh{
+    padding: 10px;
+    border-radius: 10px;
+}
+

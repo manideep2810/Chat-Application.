@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the cat div to the left and the dog div to the right.
+3. Use clear to make the footer go below both the cat and dog div. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float</title>
+  <style>
+    div {
+      display: inline-block;
+      width: 40%;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    .cat {
+      background-color: aquamarine;
+      float: left;
+    }
+
+    .dog {
+      background-color: coral;
+      float: right;
+    }
+
+    footer {
+      text-align: center;
+      background-color: blueviolet;
+    }
+
+    .cat img{
+      float: left;
+    }
+
+    .dog img{
+      float: left;
+    }
+
+    footer{
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cat">
+    <h2>CatCSS</h2>
+
+    <img src="cat.jpeg" alt="cat in a box" />
+    <p class="first-paragraph">Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty
+      poochy. Sleep on keyboard
+      toy
+      mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. The dog
+      smells
+      bad gnaw.</p>
+  </div>
+  <div class="dog">
+    <h2>DogCSS</h2>
+    <img src="dog.jpeg" alt="dogs in a box" />
+    <p class="second-paragraph">Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a
+      nice
+      floof, long doggo noodle
+      horse vvv very taste wow. Very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me a
+      frighten.</p>
+  </div>
+  
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><path d="M1 1h7v7h-7zM9 1h3v2h2v1h-3v1h-2v-1h1v-1h1v-1h-1v1h-1zM13 1h2v2h-1v-1h-1zM16 1h1v1h-1zM19 1h7v7h-7zM2 2v5h5v-5zM17 2h1v1h-1zM20 2v5h5v-5zM3 3h3v3h-3zM21 3h3v3h-3zM15 4h1v1h2v1h-3zM11 5h1v1h-1zM10 6h1v1h-1zM14 6h1v1h-1zM9 7h1v2h-1zM11 7h1v1h-1zM13 7h1v2h1v1h1v1h-1v1h-1v3h-1v2h-1v-1h-1v-5h2v-2h-1v-1h1zM15 7h1v1h-1zM17 7h1v5h2v-2h1v1h3v1h2v3h-1v-1h-1v1h-3v2h1v3h1v1h-1v3h1v-2h3v1h-1v1h-1v1h2v1h-3v-1h-2v-1h-5v1h-3v1h-1v-2h3v-1h3v-1h-1v-4h-1v4h-2v-3h1v-3h1v1h1v-2h-2v-2h1v-1h1v-2h-1v-2h1zM1 9h1v1h-1zM3 9h2v1h1v-1h3v2h-1v-1h-1v1h-1v1h-1v-1h-1v1h1v1h-4v-1h1v-2h1zM10 9h2v1h-2zM19 9h1v1h-1zM22 9h1v1h-1zM24 9h2v1h-1v1h-1zM7 11h1v1h-1zM9 11h1v1h-1zM6 12h1v1h2v1h-4v-1h1zM21 12v1h-1v1h1v-1h2v-1zM12 13v1h1v-1zM17 13v1h1v3h2v-2h-1v-1h-1v-1zM2 14h2v3h-1v-1h-1zM6 15h3v2h1v4h-1v-3h-2v-1h1v-1h-1v1h-2v-1h1zM14 15h1v1h-1zM24 15h1v2h-1zM1 16h1v1h-1zM10 16h1v1h-1zM4 17h1v1h-1zM11 17h1v3h1v1h-2zM13 17h1v1h-1zM23 17h1v1h-1zM18 18v3h3v-3zM24 18h2v2h-2zM1 19h7v7h-7zM19 19h1v1h-1zM2 20v5h5v-5zM3 21h3v3h-3zM10 21h1v2h-1v1h-1v-2h1zM11 23h1v1h-1zM10 24h1v1h-1zM9 25h1v1h-1zM18 25h2v1h-2z"/></svg> -->
+
+  <footer>Copyright. This is the footer</footer>
+</body>
+
+</html>

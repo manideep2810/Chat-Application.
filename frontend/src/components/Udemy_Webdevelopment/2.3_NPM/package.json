@@ -1,0 +1,18 @@
+{
+  "name": "2.3_npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^12.2.0",
+    "superheroes": "^4.0.0",
+    "superheros": "^1.0.0"
+  }
+}
